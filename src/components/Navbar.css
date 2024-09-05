@@ -1,0 +1,112 @@
+
+/* src/components/Navbar.css */
+
+/* Default styles */
+@media (max-width: 992px) {
+
+    .st-main-header-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    
+    .st-nav {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    
+    .st-nav-list {
+      display:block;
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .st-nav-list li {
+      margin: 0 10px;
+    }
+    
+    .sp-phone {
+      display: flex;
+      align-items: center;
+    }
+    
+    .sp-phone-no {
+      margin-left: 10px;
+    }
+    
+    /* Styles for screens with a max width of 768px */
+      .st-main-header-right {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+    
+      .st-nav {
+          width: 100%;
+      }
+    
+      .st-nav-list {
+          display: none; /* Hide the nav list initially */
+          flex-direction: column;
+          width: 100%;
+          background-color: #fff; /* Background color for the dropdown, change as needed */
+          border: 1px solid #ddd; /* Border for the dropdown */
+          position: absolute;
+          top: 60px; /* Adjust based on your layout */
+          left: 0;
+          z-index: 10;
+      }
+    
+      .st-nav.open .st-nav-list {
+          display: flex; /* Show the nav list when the dropdown is active */
+      }
+    
+      .st-nav-list li {
+          margin: 10px 0; /* Space between items */
+      }
+    
+      .toggle-nav {
+          display: block !important;
+          cursor: pointer;
+          padding: 10px;
+          background-color: #070d1b;
+          border: 1px solid #070d1b;
+      }
+    
+      .st-nav .st-nav-list {
+        /* position: absolute;
+        width: 100vw;
+        left: 0;
+        background-color: #070d1b;
+        padding: 10px 0;
+        display: none;
+        top: 100%;
+        border-top: 1px solid #101624;
+        border-bottom: 1px solid #101624;
+        overflow: auto;
+        max-height: calc(100vh - 80px); */
+    
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        background-color: #070d1b;
+        padding: 10px 0;
+        display: none;
+        overflow: auto;
+        top: 19px;
+        left: -77px;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .st-nav-list {
+        display: none; /* Hide the nav list */
+      }
+      
+      .toggle-nav {
+        display: none; /* Hide the toggle navigation button */
+      }
+    }

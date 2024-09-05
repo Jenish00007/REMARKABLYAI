@@ -1,0 +1,39 @@
+/* src/components/TermsandCondition.css */
+.terms-and-conditions {
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.terms-and-conditions h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fec544;
+}
+
+.terms-and-conditions h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #070d1b;
+}
+
+.terms-and-conditions p {
+    line-height: 1.6;
+    color: black;
+}
+
+/* CSS for links in terms-and-conditions */
+.terms-and-conditions a {
+    color: #ffb915; /* Color for links */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* Required for the transform effect */
+    display: inline-block; /* Allows transformation */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+.terms-and-conditions a:hover {
+    color: #ffb915; /* Change color on hover */
+    transform: translateY(-5px); /* Moves the link content up by 5 pixels */
+}
+

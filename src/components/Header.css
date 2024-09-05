@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff; /* Adjust as needed */
+    border-bottom: 1px solid #ddd; /* Optional border */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Adjust size as needed */
+    width: auto;
+}
+
+.site-name {
+    margin-left: 10px; /* Space between logo and name */
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: bold;
+    color: #333; /* Adjust color as needed */
+}

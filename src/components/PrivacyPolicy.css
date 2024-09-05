@@ -1,0 +1,40 @@
+/* src/components/PrivacyPolicy.css */
+.privacy-policy {
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 70px;
+  }
+  
+  .privacy-policy h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+    color: #fec544;
+  }
+  
+  .privacy-policy h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #070d1b;
+  }
+  
+  .privacy-policy p {
+    line-height: 1.6;
+    color: black;
+  }
+
+.privacy-policy a {
+    color: #feb201; 
+    text-decoration: none; 
+    position: relative; /* Required for the transform effect */
+    display: inline-block; /* Allows transformation */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+.privacy-policy a:hover {
+    color: #ffb915; /* Change color on hover */
+    transform: translateY(-5px); /* Moves the link content up by 5 pixels */
+}
+
+
+  

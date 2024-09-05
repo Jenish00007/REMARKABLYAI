@@ -1,0 +1,44 @@
+/* Earings_view.css */
+
+@media (max-width: 768) {
+    .four {
+        flex-direction: column;
+    }
+
+    .left-four, .right-four {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-row {
+        flex-direction: column;
+    }
+
+    .card1 img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .four {
+        flex-direction: row;
+    }
+
+    .left-four, .right-four {
+        width: 50%;
+        height: 100%;
+    }
+}
+
+
+/* Add these styles to your CSS file or in a <style> block */
+video {
+    border: none; /* Remove any borders around the video */
+    margin: 0; /* Remove any margins around the video */
+    padding: 0; /* Remove any padding around the video */
+}
+
+
+video::-webkit-media-controls {
+    display: none !important;
+}

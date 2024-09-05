@@ -1,0 +1,87 @@
+/* Footer.css */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #070d1b;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+ justify-content: space-around;
+  align-items: center;
+  
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left {
+  margin-right: 20px;
+}
+
+.footer-center {
+  flex-direction: column;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.footer-right {
+  margin-left: 20px;
+}
+
+
+.logo-text {
+  margin-left: 10px;
+}
+
+.logo-address {
+  margin-top: 5px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  padding: 5px 0;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #ededc0, #fec544);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+
+.footer-links a:hover {
+  color: #f0f0f0;
+}
+
+.footer-links a:hover::after {
+  transform: translateX(0);
+}
+
+.footer-contact .sp-phone-no {
+  color: #fff;
+}
+
+h6 {
+  color: #fec544;
+}
